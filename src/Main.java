@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-Car car=new Car("black","Tayota corolla");
-House house=new House("white","City.house");
-Phone phone=new Phone();
-
-        
+Car car=new Car("black: ","Tayota corolla");
+House house=new House("white: ","City.house");
+Phone phone=new Phone("white: ","Samsung");
+User user=new User(car,phone,house);
+        System.out.println("car name: "+user.getCar().getName()+"| color: "+user.getCar().getColor());
+        System.out.println("house name: "+user.getHouse().getName()+"| color: "+user.getHouse().getColor());
+        System.out.println("phone name: "+user.getPhone().getName()+"| color: "+user.getPhone().getColor());
 
 
 
